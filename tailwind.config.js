@@ -44,7 +44,13 @@ module.exports = {
       dropShadow: {
         'sideNavShadow': '15px 0px 25px 0px rgb(0 0 0 / 15%)',
 
-      }
+      },
+      backgroundImage: {
+        'snow-weather': "url('/public/images/snow.jpg')",
+        'fresh-weather': "url('/public/images/fresh.jpg')",
+        'hot-weather': "url('/public/images/hot.jpg')",
+        'cold-weather': "url('/public/images/cold.jpg')",
+      },
     },
   },
   plugins: [],
