@@ -22,7 +22,7 @@ function App() {
 
 	const changeBackground = () => {
 		if (!weather) return "bg-fresh-weather"
-		const threshold = units === "metric" ? 20 : 60;
+		const threshold = units === "metric" ? 30 : 60;
 		const cold = units === "metric" ? 10 : 20;
 
 		if (weather.temp <= threshold) {
