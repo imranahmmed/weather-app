@@ -60,7 +60,7 @@ function App() {
 	return (
 		<Div className="App ">
 			<Div className={`w-4/4 max-w-screen min-h-screen bg-fresh-weather bg-cover bg-no-repeat h-fit shadow-xl shadow-gray-400 ${changeBackground()}`}>
-				<Div className={`w-4/4 max-w-screen min-h-screen py-5 lg:px-16 bg-gradient-to-br from-[#0000008f] to-[#0315288f] h-fit shadow-xl shadow-gray-400`}>
+				<Div className={`w-4/4 max-w-screen min-h-screen p-5 bg-gradient-to-br from-[#0000008f] to-[#0315288f] h-fit shadow-xl shadow-gray-400`}>
 					<TopButtons setQuery={setQuery} />
 					<Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 					{weather ?
@@ -72,7 +72,7 @@ function App() {
 								<Typhography as="p" className="text-white font-medium uppercase text-xl border-b d-block py-3">5Days Forecast</Typhography>
 							</Div>
 
-							<Div className="flex flex-row flex-wrap h-96 justify-center">
+							<Div className="flex flex-row flex-wrap h-[96] justify-center">
 								<Div className="w-full md:w-2/4 mt-6 block px-5">
 									<ResponsiveContainer width="100%" height="100%">
 										<LineChart
