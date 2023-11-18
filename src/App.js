@@ -40,8 +40,8 @@ function App() {
 	weather && weather.daily.map((item) => {
 		return {
 			name: item.title,
-			max: item.max_temp,
-			min: item.min_temp,
+			max: item.max_temp.toFixed(),
+			min: item.min_temp.toFixed(),
 		};
 	}).forEach((data) => {
 		dayData.push(data);
