@@ -37,9 +37,6 @@ const TemperatureAndDetails = ({ weather: { condition, feels_like, humidity, ico
                 <Div className="flex text-white font-light text-xl items-center">
                     <UilArrowDown /> Low : <b className='ml-1'>{temp_min.toFixed()}°</b>
                 </Div>
-
-
-
             </Div>
         </>
     )

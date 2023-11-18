@@ -12,7 +12,6 @@ const Forecast = ({ title, items }) => {
             <Typhography as="p" className="text-white font-medium uppercase text-xl d-block py-3">{title}</Typhography>
             <Div className="flex flex-row flex-wrap justify-around">
                 {items.map((item, index) => (
-                    // <ForecastCard key={index} item = {item}/>
                     <Div key={index} className="flex flex-col items-center justify-center w-[50%] sm:w-[25%] md:w-[20%] lg:w-[20%] border-[1px] border-[#ffffff61] my-3">
                         <Typhography as="p" className="text-white font-medium uppercase text-lg border-b-[1px] border-[#ffffff61] d-block py-3">{item.title}</Typhography>
                         <Img src={iconUrl(item.icon)} className="w-12 my-3" alt="" />

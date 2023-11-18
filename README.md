@@ -23,6 +23,8 @@ Include screenshots or gifs showcasing different aspects of your app. For exampl
 
 - React: JavaScript library for building user interfaces.
 - Recharts: Used for data visualization in line chart.
+- Luxon: Used for Date and Time format.
+- React-Tostify: Used for Alart.
 - Tailwind css: Used for styling and responsive
 - OpenWeatherMap API: Used to retrieve weather data.
 
