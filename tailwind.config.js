@@ -46,10 +46,8 @@ module.exports = {
 
       },
       backgroundImage: {
-        'snow-weather': "url('/public/images/snow.jpg')",
-        'fresh-weather': "url('/public/images/fresh.jpg')",
-        'hot-weather': "url('/public/images/hot.jpg')",
-        'cold-weather': "url('/public/images/cold.jpg')",
+        'fresh-weather': "url('/public/images/fresh.webp')",
+        'hot-weather': "url('/public/images/hot.webp')",
       },
     },
   },
