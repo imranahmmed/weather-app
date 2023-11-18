@@ -16,8 +16,8 @@ The Weather App is a simple application that provides current weather conditions
 
 Include screenshots or gifs showcasing different aspects of your app. For example:
 
-![Screenshot 1](../public/screenshots/Screenshot1.png)
-![Screenshot 2](../public/screenshots/Screenshot2.png)
+![Screenshot 1](./public/screenshots/Screenshot1.png)
+![Screenshot 2](./public/screenshots/Screenshot2.png)
 
 ## Technologies Used
 
