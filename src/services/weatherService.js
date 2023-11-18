@@ -43,6 +43,7 @@ const formatCurrentWeatherData = async (data) => {
     }
 };
 
+// Format function
 const getFormattedWeatherData = async (searchParams) => {
     try {
         // getting current weather data for format
@@ -115,6 +116,7 @@ const formateLocalTime = (
     format = "cccc, dd LLLL yyyy' | Local Time:' hh:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
+// Dynamic Icon URL
 const iconUrl = (code) => `https://openweathermap.org/img/wn/${code}@2x.png`;
 
 export default getFormattedWeatherData;

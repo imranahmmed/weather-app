@@ -9,7 +9,6 @@ import getFormattedWeatherData from './services/weatherService';
 import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
 	const [weather, setWeather] = useState(null)
 	const dayData = []
 	useEffect(() => {
+		//Fetch Data
 		const fetchWeather = async () => {
 			await getFormattedWeatherData({ ...query, units }).then(
 				(data) => {
@@ -36,7 +36,7 @@ function App() {
 		fetchWeather()
 	}, [query, units])
 
-//Made a new array for line chart
+	//Made a new array for line chart
 	weather && weather.daily.map((item) => {
 		return {
 			name: item.title,
@@ -47,6 +47,7 @@ function App() {
 		dayData.push(data);
 	});
 
+	//Change Background with high temperature
 	const changeBackground = () => {
 		if (!weather) return "bg-fresh-weather"
 		const threshold = units === "metric" ? 27 : 81;
@@ -108,18 +109,16 @@ function App() {
 
 					<ToastContainer
 						position="top-right"
-						autoClose={5000}
+						autoClose={3000}
 						hideProgressBar={false}
 						newestOnTop={false}
 						closeOnClick
 						rtl={false}
 						pauseOnFocusLoss
 						draggable
-						pauseOnHover
+						pauseOnHover={false}
 						theme="light"
 					/>
-					{/* Same as */}
-					<ToastContainer />
 				</Div>
 			</Div>
 		</Div>
