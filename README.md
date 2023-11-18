@@ -4,6 +4,12 @@
 
 The Weather App is a simple application that provides current weather conditions and forecasts for different locations. It uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface.
 
+
+## Live Link
+
+- [Live Preview](https://react-weather-app-open-weather.netlify.app/) Live Preview.
+
+
 ## Features
 
 - **Current Weather:** View real-time weather conditions for a specific location, including temperature, humidity, wind speed, and more.
