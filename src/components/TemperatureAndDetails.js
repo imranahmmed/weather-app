@@ -9,7 +9,7 @@ const TemperatureAndDetails = ({ weather: { condition, feels_like, humidity, ico
         <>
             <Div className="flex flex-row items-center text-white text-center justify-center py-3 gap-5">
                 <Div>
-                    <Img src={iconUrl(icon)} className="mx-auto w-30 mb-3" />
+                    <Img src={iconUrl(icon)} className="mx-auto w-30" />
                     <Typhography as="p" className="text-7xl font-medium block font-outfit text-center mb-3">{temp.toFixed()}°</Typhography>
                     <Typhography as="p" className="text-xl text-cyan-300 text-center capitalize">{condition}</Typhography>
                 </Div>

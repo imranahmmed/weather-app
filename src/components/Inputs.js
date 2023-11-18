@@ -6,7 +6,6 @@ import Button from './Button'
 import Typhography from './Typhography'
 
 const Inputs = ({ setQuery, units, setUnits }) => {
-
     const [city, setCity] = useState("")
 
     const handleSearchClick = () => {
@@ -31,15 +30,10 @@ const Inputs = ({ setQuery, units, setUnits }) => {
 
     const handleUnitsChange = (e) => {
         const selectedUnit = e.target.name
-        console.log(selectedUnit)
         if (units !== selectedUnit) {
             setUnits(selectedUnit)
         }
     }
-
-
-
-    console.log(city)
 
     return (
         <Div className="flex flex-row flex-wrap justify-center my-6">
