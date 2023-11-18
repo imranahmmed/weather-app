@@ -14,6 +14,14 @@ const Inputs = ({ setQuery, units, setUnits }) => {
         }
     }
 
+    const handleSearchEnter = (event) => {
+        if (event.key === 'Enter') {
+            if (city) {
+                setQuery({ q: city })
+            }
+        }
+    }
+
     const handleLiveLocationClick = () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
@@ -39,7 +47,7 @@ const Inputs = ({ setQuery, units, setUnits }) => {
         <Div className="flex flex-row flex-wrap justify-center my-6">
             <Div className="flex flex-row w-full md:w-2/4 items-center justify-center space-x-4 px-6">
                 <Div className="relative w-full">
-                    <InputBox onChange={(e) => setCity(e.target.value)} className="text-xl font-extralight py-3 pl-5 pr-24 w-full shadow-xl focus:outline-none capitalize rounded-lg font-outfit" placeholder="Search for city..." />
+                    <InputBox onChange={(e) => setCity(e.target.value)} onKeyUp={(e)=>handleSearchEnter(e)} className="text-xl font-extralight py-3 pl-5 pr-24 w-full shadow-xl focus:outline-none capitalize rounded-lg font-outfit" placeholder="Search for city..." />
                     <UilSearch onClick={handleSearchClick} size={25} className="cursor-pointer text-gray-400 transition ease-out hover:scale-125 absolute right-[50px] top-[50%] translate-y-[-50%]" />
                     <UilLocationPoint onClick={handleLiveLocationClick} size={25} className="cursor-pointer text-gray-400 transition ease-out hover:scale-125 absolute right-[15px] top-[50%] translate-y-[-50%]" />
                 </Div>

@@ -36,14 +36,16 @@ function App() {
 		fetchWeather()
 	}, [query, units])
 
-
-	weather && weather.daily.map((item, index) => {
-		dayData.push({
+//Made a new array for line chart
+	weather && weather.daily.map((item) => {
+		return {
 			name: item.title,
 			max: item.max_temp,
 			min: item.min_temp,
-		})
-	})
+		};
+	}).forEach((data) => {
+		dayData.push(data);
+	});
 
 	const changeBackground = () => {
 		if (!weather) return "bg-fresh-weather"
