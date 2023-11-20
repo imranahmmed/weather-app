@@ -72,8 +72,8 @@ function App() {
 								<Typhography as="p" className="text-white font-medium uppercase text-xl border-b d-block py-3">5Days Forecast</Typhography>
 							</Div>
 
-							<Div className="flex flex-row flex-wrap h-[96] justify-center">
-								<Div className="w-full md:w-2/4 mt-6 block px-5">
+							<Div className="flex flex-row flex-wrap h-[400px] md:h-[400px] justify-center">
+								<Div className="w-full md:w-2/4 mt-6 block">
 									<ResponsiveContainer width="100%" height="100%">
 										<LineChart
 											width={600}
@@ -101,6 +101,9 @@ function App() {
 							<Div className="flex flex-row flex-wrap">
 								<Forecast title="Daily forecast" items={weather.daily} />
 								<Forecast title="Hourly forecast" items={weather.hourly} />
+
+								
+
 							</Div>
 						</>
 						:
