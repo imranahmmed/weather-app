@@ -68,7 +68,7 @@ function App() {
 							<TimeAndLocation weather={weather} />
 							<TemperatureAndDetails weather={weather} />
 
-							{/* <Div className="flex flex-col justify-center items-center mt-6 gap-5 w-full">
+							<Div className="flex flex-col justify-center items-center mt-6 gap-5 w-full">
 								<Typhography as="p" className="text-white font-medium uppercase text-xl border-b d-block py-3">5Days Forecast</Typhography>
 							</Div>
 
@@ -96,14 +96,11 @@ function App() {
 										</LineChart>
 									</ResponsiveContainer>
 								</Div>
-							</Div> */}
+							</Div>
 
 							<Div className="flex flex-row flex-wrap">
 								<Forecast title="Daily forecast" items={weather.daily} />
 								<Forecast title="Hourly forecast" items={weather.hourly} />
-
-								
-
 							</Div>
 						</>
 						:
